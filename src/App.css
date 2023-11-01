@@ -1,38 +1,173 @@
-.App {
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width:100vw;
+  background-color: black;
+}
+
+.react-chatbot-kit-chat-container {
+  width: 400px;
+}
+
+.react-chatbot-kit-chat-bot-message {
+ background-color: #d3d3d3;
+ margin-left: 2px;
+}
+.react-chatbot-kit-chat-bot-message-arrow {
+  border-right: 8px solid #d3d3d3;
+}
+
+.react-chatbot-kit-chat-btn-send{
+  background-color: #d3d3d3; 
+}
+.react-chatbot-kit-user-avatar-container{
+  background-color: #80c3d8;
+ 
+}
+.react-chatbot-kit-user-avatar-icon{
+  fill: black;
+}
+
+.react-chatbot-kit-user-chat-message{
+  background-color: #80c3d8;
+}
+
+.react-chatbot-kit-user-chat-message-arrow{
+  border-left:8px solid #80c3d8;
+}
+
+.enrollment-page{
+  color: #d3d3d3;
+}
+
+.start-btn{
+  background-color: #80c3d8;
+  color: white;
+  width: 5vw;
+  margin-left: 4rem;
+  padding: .5rem 1rem;
+  border-radius: 999px;
+  border:none;
+  cursor: pointer;
+
+}
+
+
+/* calendar css */
+
+
+.strip-calendar {
+  margin: 3rem .4rem 3rem .4rem;
+  display: flex;
+  overflow-x: auto;
+ 
+  /* Add more styles as needed */
+}
+
+.calendar-day {
   text-align: center;
+  padding: .5rem 1.6rem;
+  border: 1px solid #c5c4c4ee;
+  font-weight: 600;
+  margin-right: .4rem;
+  border-radius: 10px;
+  /* Add more styles as needed */
+}
+.calendar-day:hover{
+  background-color: #80c3d8;
+  color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.calendar-date,
+.calendar-month {
+  text-align: center;
+  padding: 5px;
+  /* Add more styles as needed */
+}
+.datemonth{
+  display: flex;
+  color: #80c3d8;
+}
+.datemonth:hover{
+  color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ .slots{
+  width: 100%;
+ 
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+} 
+
+.morning,.evening,.afternoon ,.labelslot{
+  margin: 1rem .1rem 1rem .1rem;
+  color: #717171;
+
+  
+}
+
+
+.morningslots,.eveningslots,.afternoonslots{
+ 
+  display: flex;
+  overflow-x: auto;
+  
+}
+.slotbutton{
+  text-align: center;
+  padding: .3rem .6rem;
+  border: 1px solid #c5c4c4ee;
+  color: #545454ee;
+  font-weight: 500;
+  margin-right: .4rem;
+  border-radius: 10px;
+  cursor: pointer;
+
+
+}
+.slotbutton:hover{
+  background-color: #80c3d8;
+  color:white;
+}
+
+.age-picker-container {
+  width: 200px;
+  height: 20vh;
+  overflow-y: auto;
+  margin-left: 4rem; 
+  color: #545454ee;
+ 
+}
+
+.age-picker-dropdown {
+
+  height: 2rem;
+  margin-left: .5rem;
+  width: 4rem; 
+  overflow-y: auto; 
+  border: 1px solid #c5c4c4ee;
+}
+
+.thank-you-page>h1{
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
+  font-weight: 200;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
